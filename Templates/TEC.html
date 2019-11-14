@@ -73,25 +73,80 @@
 
             </div>
 
-            <h4>Population Density :</h4>
+            <h4>Total Energy Consumption (Mtoe) :</h4>
             <h4>TEC 20yrs</h4>
             <table border="1" class="table table-striped table-bordered table-hover">
                 <thead>
                     <tr style="text-align: right;">
-                        <th>Countries</th>
-                        <th>Code</th>
-                        <th>Year</th>
-                        <th>Density</th>
+                        <th>country</th>
+                        <th>1990</th>
+                        <th>1991</th>
+                        <th>1992</th>
+                        <th>1993</th>
+                        <th>1994</th>
+                        <th>1995</th>
+                        <th>1996</th>
+                        <th>1997</th>
+                        <th>1998</th>
+                        <th>1999</th>
+                        <th>2000</th>
+                        <th>2001</th>
+                        <th>2002</th>
+                        <th>2003</th>
+                        <th>2004</th>
+                        <th>2005</th>
+                        <th>2006</th>
+                        <th>2007</th>
+                        <th>2008</th>
+                        <th>2009</th>
+                        <th>2010</th>
+                        <th>2011</th>
+                        <th>2012</th>
+                        <th>2013</th>
+                        <th>2014</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                        <th>2018</th>
+
                     </tr>
                 </thead>
 
                 <tbody>
-                    {% for data in Project2 %}
+                    {% for data in TotalEnergyConsumption %}
                     <tr style="text-align: right;">
-                        <td>{{ data['Countries'] }}</td>
-                        <td>{{ data['Code'] }}</td>
-                        <td>{{ data['Year'] }}</td>
-                        <td>{{ data['Density'] }}</td>
+                        <td>{{ data['country'] }}</td>
+                        <td>{{ data['1990'] }}</td>
+                        <td>{{ data['1991'] }}</td>
+                        <td>{{ data['1992'] }}</td>
+                        <td>{{ data['1993'] }}</td>
+                        <td>{{ data['1994'] }}</td>
+                        <td>{{ data['1995'] }}</td>
+                        <td>{{ data['1996'] }}</td>
+                        <td>{{ data['1997'] }}</td>
+                        <td>{{ data['1998'] }}</td>
+                        <td>{{ data['1999'] }}</td>
+                        <td>{{ data['2000'] }}</td>
+                        <td>{{ data['2001'] }}</td>
+                        <td>{{ data['2002'] }}</td>
+                        <td>{{ data['2003'] }}</td>
+                        <td>{{ data['2004'] }}</td>
+                        <td>{{ data['2005'] }}</td>
+                        <td>{{ data['2006'] }}</td>
+                        <td>{{ data['2007'] }}</td>
+                        <td>{{ data['2008'] }}</td>
+                        <td>{{ data['2009'] }}</td>
+                        <td>{{ data['2010'] }}</td>
+                        <td>{{ data['2011'] }}</td>
+                        <td>{{ data['2012'] }}</td>
+                        <td>{{ data['2013'] }}</td>
+                        <td>{{ data['2014'] }}</td>
+                        <td>{{ data['2015'] }}</td>
+                        <td>{{ data['2016'] }}</td>
+                        <td>{{ data['2017'] }}</td>
+                        <td>{{ data['2018'] }}</td>
+
+
                     </tr>
                 </tbody>
 
