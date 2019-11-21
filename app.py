@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
-from mongoengine.connection import connect
+# from mongoengine.connection import connect
 import os
 import jinja2
 
@@ -17,7 +17,7 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/Project2")
 @app.route("/")
 def home():
     # Find one record of data from the mongo database
-    # Project2 = mongo.db.Project2.find({})
+    Project2 = mongo.db.Project2.find({})
 
     # Return the homepage
     return render_template('index.html')
@@ -43,7 +43,7 @@ def TEP():
     # Return template and data
     return render_template('TEP.html', TotalEnergyProduction = TotalEnergyProduction)
 
-# Route to render EBOT.html template using data from Mongo
+# # Route to render EBOT.html template using data from Mongo
 @app.route("/EBOT.html")
 def EBOT():
     # Find one record of data from the mongo database
@@ -53,7 +53,7 @@ def EBOT():
     # Return template and data
     return render_template('EBOT.html', EnergyBalanceOfTrade = EnergyBalanceOfTrade)
 
-# Route to render EIG.html template using data from Mongo
+# # Route to render EIG.html template using data from Mongo
 @app.route("/EIG.html")
 def EIG():
     # Find one record of data from the mongo database
@@ -63,7 +63,7 @@ def EIG():
     # Return template and data
     return render_template('EIG.html', EnergyIntensityGDP = EnergyIntensityGDP)
 
-# Route to render CC.html template using data from Mongo
+# # Route to render CC.html template using data from Mongo
 @app.route("/CC.html")
 def CC():
     # Find one record of data from the mongo database
@@ -74,5 +74,5 @@ def CC():
     return render_template('CC.html', coordinates = coordinates)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
