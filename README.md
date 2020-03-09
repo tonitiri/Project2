@@ -24,6 +24,6 @@ PRIMARY PROJECT GITHUB REPOSITORY https://github.com/tonitiri/Project2.git
 
 GROUP MEMBERS
 
-Edward Dorris
-Hailu Sefera
+Edward Dorris,
+Hailu Sefera,
 Taiwo Onitiri
